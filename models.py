@@ -1,15 +1,11 @@
 import os
+import json
 from sqlalchemy import Column, Integer, String, create_engine, Date
 from flask_sqlalchemy import SQLAlchemy
-import json
 
 
-database_name = os.environ['DATABASE_NAME']
-db_user = os.environ['DATABASE_USER']
-db_password = os.environ['DATABASE_PWD']
 
-database_path = "postgres://{}:{}@{}/{}".format(
-    db_user, db_password, 'localhost:5432', database_name)
+DATABASE_PATH = os.environ['DATABASE_URL']
 
 db = SQLAlchemy()
 
@@ -20,8 +16,8 @@ setup_db(app) binds a flask application and a SQLAlchemy service
 '''
 
 
-def setup_db(app, database_path=database_path):
-    app.config["SQLALCHEMY_DATABASE_URI"] = database_path
+def setup_db(app, database_path=DATABASE_PATH):
+    app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_PATH
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     db.app = app
     db.init_app(app)
@@ -32,7 +28,8 @@ def setup_db(app, database_path=database_path):
 Actors Table & Model
 '''
 
-class Actors(db.Model):  
+
+class Actors(db.Model):
     __tablename__ = 'actors'
 
     id = Column(Integer, primary_key=True)
@@ -48,7 +45,7 @@ class Actors(db.Model):
     def insert(self):
         db.session.add(self)
         db.session.commit()
-  
+
     def update(self):
         db.session.commit()
 
@@ -58,11 +55,11 @@ class Actors(db.Model):
 
     def format(self):
         return {
-        'id': self.id,
-        'name' : self.name,
-        'gender': self.gender,
-        'age': self.age
-        }
+            'id': self.id,
+            'name' : self.name,
+            'gender': self.gender,
+            'age': self.age
+            }
 
 
 '''
@@ -70,22 +67,21 @@ Movies Table & Model
 '''
 
 
-class Movies(db.Model):  
+class Movies(db.Model):
     __tablename__ = 'movies'
 
     id = Column(Integer, primary_key=True)
     title = Column(String)
     release_date = Column(Date)
 
-
-    def __init__(self, title, release_date) :
+    def __init__(self, title, release_date):
         self.title = title
         self.release_date = release_date
 
     def insert(self):
         db.session.add(self)
         db.session.commit()
-  
+
     def update(self):
         db.session.commit()
 
@@ -95,7 +91,7 @@ class Movies(db.Model):
 
     def format(self):
         return {
-        'id': self.id,
-        'title' : self.title,
-        'release_date': self.release_date
-        }
+            'id': self.id,
+            'title' : self.title,
+            'release_date': self.release_date
+            }
