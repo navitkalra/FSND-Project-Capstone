@@ -1,3 +1,4 @@
+import os
 import json
 from flask import Flask, request, abort, jsonify
 #from flask_sqlalchemy import SQLAlchemy
@@ -44,6 +45,20 @@ def create_app(test_config=None):
 
 
     '''
+    Sample Endpoint: To test if the app is up and running
+    '''
+
+
+    @app.route('/', methods=['GET'])
+    def get_init():
+
+            return jsonify({
+                'success': True,
+                'SampleTest': 'Hello World'
+            })
+
+
+    '''
     Implemented endpoint GET /actors
         - it will GET all actors with their description
         - it will require the 'get:actors' permission
@@ -84,9 +99,9 @@ def create_app(test_config=None):
     @requires_auth(permission='post:actors')
     def post_actors(payload):
         add_actor = request.get_json()
-        actor_name = add_actor['name']
-        actor_gender = add_actor['gender']
-        actor_age = add_actor['age']
+        actor_name = add_actor.get('name')
+        actor_gender = add_actor.get('gender')
+        actor_age = add_actor.get('age')
 
         if actor_name is None:
             abort(422)
@@ -157,7 +172,7 @@ def create_app(test_config=None):
 
             return jsonify({
                 "success": True,
-                "drinks": actors
+                "actors": actors
             })
 
         except Exception:
@@ -186,7 +201,7 @@ def create_app(test_config=None):
             actor.delete()
             return jsonify({
                 "success": True,
-                "delete": id
+                "deleted": id
             })
 
         except Exception:
@@ -234,8 +249,8 @@ def create_app(test_config=None):
     @requires_auth(permission='post:movies')
     def post_movies(payload):
         add_movie = request.get_json()
-        movie_title = add_movie['title']
-        movie_rls_date = add_movie['release_date']
+        movie_title = add_movie.get('title')
+        movie_rls_date = add_movie.get('release_date')
 
         if movie_title is None:
             abort(422)
@@ -291,7 +306,7 @@ def create_app(test_config=None):
                 movie.title = update_movie_req['title']
 
             if 'release_date' in update_movie_req:
-                movie.gender = update_movie_req['release_date']
+                movie.release_date = update_movie_req['release_date']
 
             movie.update()
 
@@ -330,7 +345,7 @@ def create_app(test_config=None):
             movie.delete()
             return jsonify({
                 "success": True,
-                "delete": id
+                "deleted": id
             })
 
         except Exception:

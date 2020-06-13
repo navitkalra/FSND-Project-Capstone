@@ -5,7 +5,8 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 
-DATABASE_PATH = os.environ['DATABASE_URL']
+#DATABASE_PATH = os.environ['DATABASE_URL']
+DATABASE_PATH='postgres://postgres:12345678@localhost:5432/castagency'
 
 db = SQLAlchemy()
 
