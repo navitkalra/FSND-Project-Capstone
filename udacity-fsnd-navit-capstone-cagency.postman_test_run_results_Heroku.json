@@ -1,0 +1,858 @@
+{
+	"id": "75128d5d-3262-41db-ab71-a6fa487810f3",
+	"name": "udacity-fsnd-navit-capstone-cagency",
+	"timestamp": "2020-06-15T21:58:27.310Z",
+	"collection_id": "1f3a8b13-5154-423d-823b-63451235cb6a",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 32,
+	"totalFail": 8,
+	"results": [
+		{
+			"id": "7a4109ad-44ab-4c64-bb56-1bf1bfaa31e5",
+			"name": "/actors",
+			"url": "https://navitcastingagency.herokuapp.com//actors",
+			"time": 1375,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains actors array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains actors array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1375
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains actors array": true
+				}
+			]
+		},
+		{
+			"id": "7a50bf94-58ca-4f77-b2a3-72615e1b8e96",
+			"name": "/actors",
+			"url": "https://navitcastingagency.herokuapp.com//actors",
+			"time": 580,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 401": false
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				580
+			],
+			"allTests": [
+				{
+					"Status code is 401": false
+				}
+			]
+		},
+		{
+			"id": "945b283b-dd09-401c-9ee2-b22295c97c3a",
+			"name": "/actors/1",
+			"url": "https://navitcastingagency.herokuapp.com//actors/1",
+			"time": 662,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 401": false
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				662
+			],
+			"allTests": [
+				{
+					"Status code is 401": false
+				}
+			]
+		},
+		{
+			"id": "13c198a1-de11-4b70-bb51-0fffcf5dea50",
+			"name": "/actors/2",
+			"url": "https://navitcastingagency.herokuapp.com//actors/2",
+			"time": 582,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 401": false
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				582
+			],
+			"allTests": [
+				{
+					"Status code is 401": false
+				}
+			]
+		},
+		{
+			"id": "023b7733-1a77-4015-a9b9-2e1215f2bed3",
+			"name": "/movies",
+			"url": "https://navitcastingagency.herokuapp.com//movies",
+			"time": 544,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains movies array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains movies array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				544
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains movies array": true
+				}
+			]
+		},
+		{
+			"id": "c0c75294-fa5b-451f-b738-9f39b5739081",
+			"name": "/movies",
+			"url": "https://navitcastingagency.herokuapp.com//movies",
+			"time": 565,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 401": false
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				565
+			],
+			"allTests": [
+				{
+					"Status code is 401": false
+				}
+			]
+		},
+		{
+			"id": "d4cdeaf6-9cea-4a31-bef0-6c9eae2e1492",
+			"name": "/movies/1",
+			"url": "https://navitcastingagency.herokuapp.com//movies/1",
+			"time": 575,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 401": false
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				575
+			],
+			"allTests": [
+				{
+					"Status code is 401": false
+				}
+			]
+		},
+		{
+			"id": "2833606d-e349-46b0-9e5d-81e7d9b03f5c",
+			"name": "/movies/2",
+			"url": "https://navitcastingagency.herokuapp.com//movies/2",
+			"time": 592,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 401": false
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				592
+			],
+			"allTests": [
+				{
+					"Status code is 401": false
+				}
+			]
+		},
+		{
+			"id": "c8a1138a-a54b-4342-9f86-c4655eab9faa",
+			"name": "/actors",
+			"url": "https://navitcastingagency.herokuapp.com//actors",
+			"time": 591,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains actors array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains actors array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				591
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains actors array": true
+				}
+			]
+		},
+		{
+			"id": "71fe0e64-094c-4acb-abc9-52daa2063a0a",
+			"name": "/actors",
+			"url": "https://navitcastingagency.herokuapp.com//actors",
+			"time": 615,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains actors array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains actors array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				615
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains actors array": true
+				}
+			]
+		},
+		{
+			"id": "faf21c19-fd39-4ea5-afa8-6db806afb507",
+			"name": "/actors/1",
+			"url": "https://navitcastingagency.herokuapp.com//actors/1",
+			"time": 584,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains actors array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains actors array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				584
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains actors array": true
+				}
+			]
+		},
+		{
+			"id": "54e00153-c0c5-4924-99d8-ccb93013bf34",
+			"name": "/actors/7",
+			"url": "https://navitcastingagency.herokuapp.com//actors/7",
+			"time": 578,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"deletes actor id = xx": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"deletes actor id = xx": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				578
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"deletes actor id = xx": true
+				}
+			]
+		},
+		{
+			"id": "7a99c9cd-fb37-4b3d-8dc5-1ea0d3240f16",
+			"name": "/movies",
+			"url": "https://navitcastingagency.herokuapp.com//movies",
+			"time": 637,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains movies array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains movies array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				637
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains movies array": true
+				}
+			]
+		},
+		{
+			"id": "3437caa7-f2e2-4dd4-bd2c-b8b87d93035a",
+			"name": "/movies",
+			"url": "https://navitcastingagency.herokuapp.com//movies",
+			"time": 590,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 401": false
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				590
+			],
+			"allTests": [
+				{
+					"Status code is 401": false
+				}
+			]
+		},
+		{
+			"id": "47847e87-6abc-45cc-8c58-bfe0fe554794",
+			"name": "/movies/1",
+			"url": "https://navitcastingagency.herokuapp.com//movies/1",
+			"time": 585,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains movies array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains movies array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				585
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains movies array": true
+				}
+			]
+		},
+		{
+			"id": "462513bb-afc2-41c0-a7b7-2c5f635df9e0",
+			"name": "/movies/5",
+			"url": "https://navitcastingagency.herokuapp.com//movies/5",
+			"time": 565,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 401": false
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				565
+			],
+			"allTests": [
+				{
+					"Status code is 401": false
+				}
+			]
+		},
+		{
+			"id": "b0a24549-461d-4c03-b749-c77636217be7",
+			"name": "/actors",
+			"url": "https://navitcastingagency.herokuapp.com//actors",
+			"time": 551,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains actors array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains actors array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				551
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains actors array": true
+				}
+			]
+		},
+		{
+			"id": "e19e982a-1b82-457a-ac1c-f114cb42efeb",
+			"name": "/actors",
+			"url": "https://navitcastingagency.herokuapp.com//actors",
+			"time": 576,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains actors array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains actors array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				576
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains actors array": true
+				}
+			]
+		},
+		{
+			"id": "aebc065f-d882-467a-a8c2-ab5e4f6dc67d",
+			"name": "/actors/2",
+			"url": "https://navitcastingagency.herokuapp.com//actors/2",
+			"time": 582,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains actors array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains actors array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				582
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains actors array": true
+				}
+			]
+		},
+		{
+			"id": "c332494b-3a77-4411-b29f-24fd94ac8dcf",
+			"name": "/actors/8",
+			"url": "https://navitcastingagency.herokuapp.com//actors/8",
+			"time": 586,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"deletes actor id = xx.": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"deletes actor id = xx.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				586
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"deletes actor id = xx.": true
+				}
+			]
+		},
+		{
+			"id": "62c781c8-421a-4ac7-afcd-aa301f11de70",
+			"name": "/movies",
+			"url": "https://navitcastingagency.herokuapp.com//movies",
+			"time": 559,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains movies array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains movies array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				559
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains movies array": true
+				}
+			]
+		},
+		{
+			"id": "5dfa245a-affb-4565-90c1-8d793e21e061",
+			"name": "/movies",
+			"url": "https://navitcastingagency.herokuapp.com//movies",
+			"time": 575,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains movies array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains movies array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				575
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains movies array": true
+				}
+			]
+		},
+		{
+			"id": "6345ae38-b266-43fe-8f04-7a33055c5910",
+			"name": "/movies/1",
+			"url": "https://navitcastingagency.herokuapp.com//movies/1",
+			"time": 603,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"value contains movies array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value contains movies array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				603
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"value contains movies array": true
+				}
+			]
+		},
+		{
+			"id": "8a521a31-8169-4c0f-a254-920fa84c6993",
+			"name": "/movies/5",
+			"url": "https://navitcastingagency.herokuapp.com//movies/5",
+			"time": 582,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"deletes actor id = xx": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"deletes actor id = xx": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				582
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"deletes actor id = xx": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 14834,
+	"collection": {
+		"requests": [
+			{
+				"id": "7a4109ad-44ab-4c64-bb56-1bf1bfaa31e5",
+				"method": "GET"
+			},
+			{
+				"id": "7a50bf94-58ca-4f77-b2a3-72615e1b8e96",
+				"method": "POST"
+			},
+			{
+				"id": "945b283b-dd09-401c-9ee2-b22295c97c3a",
+				"method": "PATCH"
+			},
+			{
+				"id": "13c198a1-de11-4b70-bb51-0fffcf5dea50",
+				"method": "DELETE"
+			},
+			{
+				"id": "023b7733-1a77-4015-a9b9-2e1215f2bed3",
+				"method": "GET"
+			},
+			{
+				"id": "c0c75294-fa5b-451f-b738-9f39b5739081",
+				"method": "POST"
+			},
+			{
+				"id": "d4cdeaf6-9cea-4a31-bef0-6c9eae2e1492",
+				"method": "PATCH"
+			},
+			{
+				"id": "2833606d-e349-46b0-9e5d-81e7d9b03f5c",
+				"method": "DELETE"
+			},
+			{
+				"id": "c8a1138a-a54b-4342-9f86-c4655eab9faa",
+				"method": "GET"
+			},
+			{
+				"id": "71fe0e64-094c-4acb-abc9-52daa2063a0a",
+				"method": "POST"
+			},
+			{
+				"id": "faf21c19-fd39-4ea5-afa8-6db806afb507",
+				"method": "PATCH"
+			},
+			{
+				"id": "54e00153-c0c5-4924-99d8-ccb93013bf34",
+				"method": "DELETE"
+			},
+			{
+				"id": "7a99c9cd-fb37-4b3d-8dc5-1ea0d3240f16",
+				"method": "GET"
+			},
+			{
+				"id": "3437caa7-f2e2-4dd4-bd2c-b8b87d93035a",
+				"method": "POST"
+			},
+			{
+				"id": "47847e87-6abc-45cc-8c58-bfe0fe554794",
+				"method": "PATCH"
+			},
+			{
+				"id": "462513bb-afc2-41c0-a7b7-2c5f635df9e0",
+				"method": "DELETE"
+			},
+			{
+				"id": "b0a24549-461d-4c03-b749-c77636217be7",
+				"method": "GET"
+			},
+			{
+				"id": "e19e982a-1b82-457a-ac1c-f114cb42efeb",
+				"method": "POST"
+			},
+			{
+				"id": "aebc065f-d882-467a-a8c2-ab5e4f6dc67d",
+				"method": "PATCH"
+			},
+			{
+				"id": "c332494b-3a77-4411-b29f-24fd94ac8dcf",
+				"method": "DELETE"
+			},
+			{
+				"id": "62c781c8-421a-4ac7-afcd-aa301f11de70",
+				"method": "GET"
+			},
+			{
+				"id": "5dfa245a-affb-4565-90c1-8d793e21e061",
+				"method": "POST"
+			},
+			{
+				"id": "6345ae38-b266-43fe-8f04-7a33055c5910",
+				"method": "PATCH"
+			},
+			{
+				"id": "8a521a31-8169-4c0f-a254-920fa84c6993",
+				"method": "DELETE"
+			}
+		]
+	}
+}
