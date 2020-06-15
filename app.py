@@ -6,10 +6,13 @@ from flask_cors import CORS
 from models import setup_db, Actors, Movies
 from auth import AuthError, requires_auth
 
+
 RECS_PER_PAGE = 10
+
 
 def create_app(test_config=None):
 # create and configure the app
+
     app = Flask(__name__)
     setup_db(app)
     CORS(app)
