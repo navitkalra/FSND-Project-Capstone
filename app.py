@@ -121,12 +121,9 @@ def create_app(test_config=None):
                                age=actor_age)
             new_actor.insert()
 
-            actors = [actor.format() for actor in
-                      Actors.query.filter(Actors.id == new_actor.id).all()]
-
             return jsonify({
                 "success": True,
-                "actors": actors
+                "actor-added": new_actor.id
             })
 
         except Exception:
@@ -170,12 +167,9 @@ def create_app(test_config=None):
 
             actor.update()
 
-            actors = [actor.format() for actor in
-                      Actors.query.filter(Actors.id == id).all()]
-
             return jsonify({
                 "success": True,
-                "actors": actors
+                "actor-updated": actor.id
             })
 
         except Exception:
@@ -204,7 +198,7 @@ def create_app(test_config=None):
             actor.delete()
             return jsonify({
                 "success": True,
-                "deleted": id
+                "actor-deleted": actor.id
             })
 
         except Exception:
@@ -266,12 +260,9 @@ def create_app(test_config=None):
                                release_date=movie_rls_date)
             new_movie.insert()
 
-            movies = [movie.format() for movie in
-                      Movies.query.filter(Movies.id == new_movie.id).all()]
-
             return jsonify({
                 "success": True,
-                "movies": movies
+                "movie-added": new_movie.id
             })
 
         except Exception:
@@ -313,12 +304,9 @@ def create_app(test_config=None):
 
             movie.update()
 
-            movies = [movie.format() for movie in
-                      Movies.query.filter(Movies.id == id).all()]
-
             return jsonify({
                 "success": True,
-                "movies": movies
+                "movie-updated": movie.id
             })
 
         except Exception:
@@ -348,7 +336,7 @@ def create_app(test_config=None):
             movie.delete()
             return jsonify({
                 "success": True,
-                "deleted": id
+                "movie-deleted": movie.id
             })
 
         except Exception:
