@@ -430,7 +430,7 @@
 					"response": []
 				},
 				{
-					"name": "/actors/1",
+					"name": "/actors/10",
 					"event": [
 						{
 							"listen": "test",
@@ -456,7 +456,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"age\": 47\n}",
+							"raw": "{\n    \"age\": 49\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -464,20 +464,20 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/actors/1",
+							"raw": "{{host}}/actors/10",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"actors",
-								"1"
+								"10"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "/actors/7",
+					"name": "/actors/11",
 					"event": [
 						{
 							"listen": "test",
@@ -488,9 +488,9 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"deletes actor id = xx\", function () {\r",
+									"pm.test(\"deletes actor id = 11\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.deleted).to.eql(7);\r",
+									"    pm.expect(jsonData.deleted).to.eql(11);\r",
 									"});\r",
 									""
 								],
@@ -502,13 +502,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/actors/7",
+							"raw": "{{host}}/actors/11",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"actors",
-								"7"
+								"11"
 							]
 						}
 					},
@@ -592,7 +592,7 @@
 					"response": []
 				},
 				{
-					"name": "/movies/1",
+					"name": "/movies/10",
 					"event": [
 						{
 							"listen": "test",
@@ -617,7 +617,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"release_date\": \"2022-04-01\"\n}",
+							"raw": "{\n    \"release_date\": \"2023-04-01\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -638,7 +638,7 @@
 					"response": []
 				},
 				{
-					"name": "/movies/5",
+					"name": "/movies/11",
 					"event": [
 						{
 							"listen": "test",
@@ -658,13 +658,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/movies/5",
+							"raw": "{{host}}/movies/11",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"movies",
-								"5"
+								"11"
 							]
 						}
 					},
@@ -791,7 +791,7 @@
 					"response": []
 				},
 				{
-					"name": "/actors/2",
+					"name": "/actors/12",
 					"event": [
 						{
 							"listen": "test",
@@ -824,20 +824,20 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/actors/2",
+							"raw": "{{host}}/actors/12",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"actors",
-								"2"
+								"12"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "/actors/8",
+					"name": "/actors/13",
 					"event": [
 						{
 							"listen": "test",
@@ -848,9 +848,9 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"deletes actor id = xx.\", function () {\r",
+									"pm.test(\"deletes actor id = 13.\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.deleted).to.eql(8);\r",
+									"    pm.expect(jsonData.deleted).to.eql(13);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -861,13 +861,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/actors/8",
+							"raw": "{{host}}/actors/13",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"actors",
-								"8"
+								"13"
 							]
 						}
 					},
@@ -956,7 +956,7 @@
 					"response": []
 				},
 				{
-					"name": "/movies/1",
+					"name": "/movies/12",
 					"event": [
 						{
 							"listen": "test",
@@ -981,7 +981,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"release_date\": \"2027-01-31\"\n}",
+							"raw": "{\n\t\"release_date\": \"2028-01-31\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -989,20 +989,20 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/movies/1",
+							"raw": "{{host}}/movies/12",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"movies",
-								"1"
+								"12"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "/movies/5",
+					"name": "/movies/13",
 					"event": [
 						{
 							"listen": "test",
@@ -1013,9 +1013,9 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"deletes actor id = xx\", function () {\r",
+									"pm.test(\"deletes actor id = 13.\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.deleted).to.eql(5);\r",
+									"    pm.expect(jsonData.deleted).to.eql(13);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1026,13 +1026,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/movies/5",
+							"raw": "{{host}}/movies/13",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"movies",
-								"5"
+								"13"
 							]
 						}
 					},
@@ -1098,9 +1098,9 @@
 	],
 	"variable": [
 		{
-			"id": "107b0f1f-74b4-4bc3-84ea-aae38d109769",
+			"id": "cbed898c-0128-40f5-a876-cba20d58ffdd",
 			"key": "host",
-			"value": "https://navitcastingagency.herokuapp.com/",
+			"value": "https://navitcastingagency.herokuapp.com",
 			"type": "string"
 		}
 	],
