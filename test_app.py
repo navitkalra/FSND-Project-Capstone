@@ -10,10 +10,6 @@ class CastingAgencyTestCase(unittest.TestCase):
 
     def setUp(self):
 
-#       self.assistant_auth_header= {'Authorization' : 'Bearer ' + os.environ['assistant_token']}
-#       self.director_auth_header = {'Authorization' : 'Bearer ' + os.environ['director_token']}
-#       self.producer_auth_header = {'Authorization' : 'Bearer ' + os.environ['producer_token']}
-#       self.database_path = os.environ['DATABASE_URL']
         DATABASE_URL = 'postgres://postgres:12345678@localhost:5432/castagency'
         ASSISTANT_TOKEN='eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikg2YlZOc0RTelUzMnNxOHhlTzRKeiJ9.eyJpc3MiOiJodHRwczovL2ZzbmRrYWxyYTEuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlZGQxNDA4MjI5ZGNlMDAxM2Q3Mjk5ZCIsImF1ZCI6ImNhZ2VuY3kiLCJpYXQiOjE1OTIyNTgwNDksImV4cCI6MTU5MjM0NDQ0OSwiYXpwIjoiWUR6SXVIeWFhR3hIcDhpZUVwUVV4S3BNeUNNUE4xakEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIl19.aTmqMMNUZneX5DPFGMc45zvBuyryYlbfSrChSdi-bvrXQE4S6ZWKAiJFNbRRq3QUandO6kpFZXGpjQz-4UbXHLrzLtCJ_sgOntAOk5UOx5v1AY2lUsiQUVJvUvd901kaYweL8GixnkYlDt_8wwfzdTacjDG3UMjiFhC3Eb_0S23pPzNSVrzV5CJxWiyfQwhBXYJluhhREA0K-4g-K2fgVTq3XQi9ko5tAMfIrUIhlobeTrS8XXv4rDT-yOLvZexuDHVG0KtYpxr59f7_jjPsb7YHbI4AN_KjI1Kek0F6T_C4r2bocLDi8TjYFbxPp2EJeLlMy6eaCCP3TLGg8kz46g'
         DIRECTOR_TOKEN='eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikg2YlZOc0RTelUzMnNxOHhlTzRKeiJ9.eyJpc3MiOiJodHRwczovL2ZzbmRrYWxyYTEuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlZTUzYTA1ZTE4MzI3MDAxOTI3N2ZhMiIsImF1ZCI6ImNhZ2VuY3kiLCJpYXQiOjE1OTIyNTc5NzUsImV4cCI6MTU5MjM0NDM3NSwiYXpwIjoiWUR6SXVIeWFhR3hIcDhpZUVwUVV4S3BNeUNNUE4xakEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIl19.XZeQAeyR8sElZBOs5SpTeRzaBkeQfyV3AqzhOx9OHY4GlhjHHePyhkw6d3Xmov-lBa0atE2ibZfzY8Dp6x7cOm2IF4Bl9-bpXJkImRqHWP0fc-dibqC-er8ZKzZr76KnD4trrJTnZYNQ0cZAQ31fjuACHZE3Um_wkuGz98V6TOz_XDFrjn5GJj6hysDttGVk1nq5VOomeR0Bu6rmmF6xl44xT0Kqaa8EScNYwVE2FoDJmEkdQxx--xHploW9CpfJQ_8cJj__TAxEly7f4_yQJmAppPr_1zOd-E49wdohTmz3vGP2hfcSOvV3JEU9vA2XNLNlVvv_SygjjxS5h4v3FA'
@@ -51,7 +47,6 @@ class CastingAgencyTestCase(unittest.TestCase):
             'name' : "Markus",
             'age' : 39,
             'gender': 'MALE'
-
         }
 
         self.post_actor_name_missing = {
