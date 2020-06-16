@@ -35,7 +35,7 @@ psycopg2-binary==2.8.5
 py==1.8.1
 pyasn1==0.4.8
 pycodestyle==2.6.0
-pycryptodome==3.6.6
+pycryptodome==3.3.1
 PyJWT==1.7.1
 pylint==2.3.1
 pylint-flask==0.6
