@@ -36,7 +36,7 @@ py==1.8.1
 pyasn1==0.4.8
 pycodestyle==2.6.0
 pycryptodome==3.3.1
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==2.3.1
 pylint-flask==0.6
 pylint-flask-sqlalchemy==0.2.0
